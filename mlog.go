@@ -166,7 +166,8 @@ func printInternal(level LogLevel, text string, err error, params ...any) {
 	switch level {
 
 	case LogLevelFatal,
-		LogLevelError:
+		LogLevelError,
+		LogLevelWarning:
 
 		SetSgr(SgrFgBrightMagenta)
 
